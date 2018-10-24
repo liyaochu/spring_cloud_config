@@ -9,3 +9,7 @@ spring:
     name: eurekaclient
 env:
   dev
+management:
+  security:
+    #关闭安全验证，否则访问refresh端点时会提示权限不足
+    enabled: false
